@@ -4,10 +4,59 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Opplæringsportal</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Opplæringsportal</h1>
-  <p>Les materialet og logg inn for quiz.</p>
-  <p><a href="login.html">Gå til innlogging</a></p>
+  <div class="container">
+    <div class="nav">
+      <div class="brand">
+        <span>Opplæringsportal</span>
+        <span class="badge">RP • Kurs</span>
+      </div>
+      <a class="btn secondary" href="login.html">Logg inn</a>
+    </div>
+
+    <section class="hero">
+      <h1>Velkommen til opplæringen</h1>
+      <p class="lead">
+        Les materialet, logg inn med brukeren du har fått, og ta quizen.
+        Du får resultatet <b>instant</b> (bestått/ikke bestått).
+      </p>
+      <div style="display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="login.html">Start (innlogging)</a>
+        <a class="btn secondary" href="#materiell">Gå til materiell</a>
+      </div>
+
+      <div class="grid" id="materiell">
+        <div class="card">
+          <h2>Materiell</h2>
+          <p>Bytt ut teksten under med ditt RP-materiale.</p>
+          <hr class="sep" />
+          <ul>
+            <li><b>Del 1:</b> Roller, ansvar, og forventninger</li>
+            <li><b>Del 2:</b> Prosedyrer / regelverk</li>
+            <li><b>Del 3:</b> Scenarioer og vanlige feil</li>
+          </ul>
+          <p class="small">Tips: hold det kort, og lag gjerne 3–5 punkter per del.</p>
+        </div>
+
+        <div class="card kv">
+          <h2>Hvordan det funker</h2>
+          <div class="note">
+            1) Les<br/>
+            2) Logg inn<br/>
+            3) Ta quiz (15 spørsmål)<br/>
+            4) Få bestått/ikke bestått
+          </div>
+          <a class="btn" href="login.html">Logg inn og ta quiz</a>
+          <p class="small">Har du ikke innlogging? Kontakt ansvarlig.</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div>© Opplæringsportal • laget for RP-bruk</div>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
